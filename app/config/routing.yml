@@ -1,0 +1,27 @@
+#app:
+#    resource: "@AppBundle/Controller/"
+#    type:     annotation
+    
+home:
+    path:      /
+    defaults:  { _controller: AppBundle:Click:index }
+
+click_save:
+    path:      /click
+    defaults:  { _controller: AppBundle:Click:save }
+    
+error_click:
+    path:      /error/{id}
+    defaults:  { _controller: AppBundle:Click:errorClick }
+    
+success_click:
+    path:      /success/{id}
+    defaults:  { _controller: AppBundle:Click:successClick }
+    
+domains:
+    path: /domains
+    defaults: { _controller: AppBundle:Domain:index }
+    
+domain:
+    path: /domain
+    defaults: { _controller: AppBundle:Domain:save }

@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+    {{ include('default/menu.html.twig') }}
+    <section>
+        <div id="wrapper">
+            <div id="container">
+                <table class="table table-striped">
+                    <tr>
+                        <td>id<td>
+                        <td>user-agent<td>
+                        <td>ip<td>
+                        <td>ref<td>
+                        <td>param1<td>
+                        <td>param2<td>
+                    </tr>
+                    {% if click %}
+                    <tr>
+                        <td>{{ click.id }}<td>
+                        <td>{{ click.ua }}<td>
+                        <td>{{ click.ip }}<td>
+                        <td>{{ click.ref }}<td>
+                        <td>{{ click.param1 }}<td>
+                        <td>{{ click.param2 }}<td>
+                    </tr>
+                    {% endif %}
+                </table>
+            </div>
+        </div>
+    </section>
+{% endblock %}

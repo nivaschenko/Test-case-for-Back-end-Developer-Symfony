@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+    {{ include('default/menu.html.twig') }}
+    <section>
+        <div id="wrapper">
+            <div id="container">
+                <div id="domains"></div>
+            </div>
+        </div>
+    </section>
+    <script>
+        var badDomain = {{ badDomain|raw }};
+    </script>
+{% endblock %}

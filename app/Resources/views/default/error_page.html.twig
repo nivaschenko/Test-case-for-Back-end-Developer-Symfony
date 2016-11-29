@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+    {{ include('default/menu.html.twig') }}
+    <section>
+        <div id="wrapper">
+            <div id="container">
+                <div class="alert alert-danger" role="alert">
+                    <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                    <span class="sr-only">Error:</span>
+                        {{ data }}
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

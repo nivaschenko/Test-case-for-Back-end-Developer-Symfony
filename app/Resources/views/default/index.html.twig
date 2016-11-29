@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    {{ include('default/menu.html.twig') }}
+    <section>
+        <script>
+            var data = {{ data|raw }};
+        </script>
+        <div id="wrapper">
+            <div id="container">
+                <div id="table"></div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
